@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हमारे बारे में - About Us - Rural Healthcare Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero-section {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        body {
+            background: linear-gradient(135deg, var(--color-cream-50) 0%, var(--color-cream-100) 100%);
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6), rgba(33, 128, 141, 0.4));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .features-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-box {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .mission-section {
+            background: var(--color-bg-1);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+        .back-btn {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(33, 128, 141, 0.8);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 100;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background: rgba(33, 128, 141, 0.95);
+            transform: translateY(-2px);
+        }
+        .back-btn:hover {
+            background: var(--color-primary-hover);
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 300px;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="window.location.href='index.html'" class="back-btn">← वापस जाएं</button>
+    
+    <div class="about-container">
+        <div class="hero-section">
+            <img src="image.png" alt="Rural Healthcare Innovation" class="hero-image">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>डिजिटल स्वास्थ्य का भविष्य</h1>
+                    <p>गांव-गांव तक पहुंच रही स्वास्थ्य सेवाएं</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission-section">
+            <h2>हमारा मिशन</h2>
+            <p>ग्रामीण स्वास्थ्य सहायक एक अभिनव डिजिटल पहल है जो आधुनिक तकनीक के माध्यम से गांवों में स्वास्थ्य सेवाओं को सुलभ बनाती है। हमारा लक्ष्य है कि हर ग्रामीण को उच्च गुणवत्ता वाली स्वास्थ्य सेवाएं मिलें, चाहे वो कितनी भी दूर हो।</p>
+        </div>
+
+        <div class="features-section">
+            <div class="feature-box">
+                <div class="feature-icon">🤖</div>
+                <h3>एआई सहायक</h3>
+                <p>24/7 स्वास्थ्य सलाह और मार्गदर्शन के लिए आर्टिफिशियल इंटेलिजेंस का उपयोग</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">📱</div>
+                <h3>सरल इंटरफेस</h3>
+                <p>सभी आयु वर्ग के लोगों के लिए आसान और सहज उपयोग</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">🏥</div>
+                <h3>तत्काल सहायता</h3>
+                <p>आपातकालीन स्थिति में तुरंत मदद और नजदीकी अस्पताल से संपर्क</p>
+            </div>
+        </div>
+
+        <div class="innovation-section">
+            <h2>हमारी तकनीक</h2>
+            <p>हम नवीनतम एआई और मशीन लर्निंग तकनीकों का उपयोग करते हैं जो स्थानीय भाषाओं में स्वास्थ्य सेवाएं प्रदान करती हैं। हमारा ऐप ऑफलाइन भी काम करता है, जिससे इंटरनेट की कमी वाले क्षेत्रों में भी सेवाएं जारी रह सकती हैं।</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
