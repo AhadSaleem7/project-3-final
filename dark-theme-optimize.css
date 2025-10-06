@@ -1,0 +1,74 @@
+/* Dark theme optimizations */
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#main-title {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+#main-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.language-option {
+    background: rgba(58, 96, 115, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-option:hover {
+    background: rgba(58, 96, 115, 0.5);
+}
+
+.language-option.active {
+    background: rgba(58, 96, 115, 0.6);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn--primary:hover {
+    background: rgba(58, 96, 115, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#supported-text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Add subtle animated gradient overlay */
+.landing-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(58, 96, 115, 0.1) 0%,
+        rgba(22, 34, 42, 0.1) 100%);
+    animation: gradientShift 8s ease infinite;
+    pointer-events: none;
+}
+
+@keyframes gradientShift {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
