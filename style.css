@@ -156,13 +156,15 @@ body {
 }
 
 .about-link {
-    color: var(--color-primary);
+    color: #ffffff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-right: 1rem;
     border-radius: 20px;
-    background: var(--color-secondary);
+    background: rgba(58, 96, 115, 0.9);
     transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .about-link:hover {
